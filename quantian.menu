@@ -1,0 +1,8 @@
+LABEL QUANTIANLIVE
+MENU LABEL ^Quantian Live 0.7.9.2
+KERNEL er/plugins/quantian/linux26
+INITRD er/plugins/quantian/miniroot.gz
+APPEND nfsdir=10.0.0.1:/tftpboot/er/shares/quantian nodhcp lang=us ramdisk_size=100000 init=/etc/init apm=power-off nomce noapic dma vga=791 libata.force=noncq hpsa.hpsa_allow_any=1 BOOT_IMAGE=knoppix
+TEXT HELP
+                 Quantian Live.
+ENDTEXT
